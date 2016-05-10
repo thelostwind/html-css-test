@@ -1,12 +1,88 @@
-#bubble {
+body {
+	background-color: #ccc;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+}
+
+#header-wrapper {
+	/* background-color: #24292c; */
+	background-color: #202020;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+#blog-header {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#title {
+	color: white;
+	display: inline;
+}
+
+
+.nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.nav li {
+	float: left;
+}
+.nav a:link, a:visited {
+	display: block;
+	width: 120px;
+	font-weight: bold;
+	color: #FFF;
+	background-color: #bebebe;
+	text-align: center;
+	padding: 4px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.nav a:hover, a:active {
+	background-color: #cc0000;
+}
+
+
+.bubble {
 	position: relative;
 	background-color: #202020;
-	width: 80px;
+	width: 100px;
 	padding: 20px;
 	color: #ccc;
+	margin: 50px;
+	border: 1px solid #111;
 	border-radius: 10px;
 	box-shadow: 1px 1px 2px #202020;
-	-moz-box-shadow: 1px 1px 2px #202020;
-	-webkit-border-shadow: 1px 1px 2px #202020;
 	text-shadow: 0px 0px 15px #fff;
+}
+
+.bubble:after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 15px solid;
+}
+
+.bubble-right:after {
+	border-left-color: #202020;
+	left: 100%;
+	top: 50%;
+	margin-top: -15px;
 }
